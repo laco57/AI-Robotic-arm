@@ -10,6 +10,12 @@ its made from easily accesible materials (i made it from lego but it can be easi
 You can talk to the AI through a PySide6 app i made,i personally prefer typing my prompts but you can very easily make it voice controlled.
 Now here are the steps to make it:
 
+##What you will need:
+      1.  3 servomotors(model depends on what you are making the arm from)
+      2. A microcontroller(esp,arduino,raspberry_pico)
+      3. oled display(optional but makes it feel alive)
+      ##4. A reliable source of 5V !!! very important.
+      5.some wires and a breadboard.
 
 
 
@@ -75,5 +81,19 @@ ollama pull qwen2.5:3b
 ollama run qwen2.5:3b
 ```
 If everything works now you can just copy the Main.py to a coding ide and when you run it, the pyside6 app should show up,
+try out the app and if everything is working we can move on
+
+
+#Next step actually making the arm
+The arm consists of a square base, a shoulder and head.I included 2 stl files one for the body one for the head you can either print
+those out or easily recreate it from lego/cardboard. Although you shouold really watch your servo weights since a cardboard arm will need lighter servos then a lego one obviously.
+I will have a youtube video (maybe its even out by now) where i show closer look of the arm.
+
+
+#Now to set up the microcontroler
+The last step is to set up your microcontroller of choice (i am using a esp32 but it works with all).
+just load the reciever code on to your microcontroller and keep in mind if you are using something else then a esp
+you will have to tweak a few stuff (for example baud rate is 9600 for arduino not 115200)
+
 
 
