@@ -7,24 +7,38 @@
 
 ## About the project
 
-its a AI robotic arm controlled by a local ollama ai model
+its a AI robotic arm controlled by a local ollama ai model(i call him ezekiel)
 made from easily accesible materials (i made it from lego but it can be easily recreated with cardboard/or the stl file i included).
 You can talk to the AI through a PySide6 app i made,i personally prefer typing my prompts but you can very easily make it voice controlled.
 Now here are the steps to make it:
+(also disclaimer i used ai to learn some of the libraries like PySide6 and ollama but the code is not copy and paste from AI i worked really hard on it)
+
+
+
+## Features
+* Moving around in 4 directions (up,down,left,right)
+* Capable of having a conversation
+* Picking up and putting down magnetic stuff
+* AI running fully locally
+  
+
+
+
+
 
 ## What you will need:
-      1.  3 servomotors(model depends on what you are making the arm from)
+      1. 3 servomotors(model depends on what you are making the arm from)
       2. A microcontroller(esp,arduino,raspberry_pico)
-      3. oled display(optional but makes it feel alive)
+      3. A oled display(optional but makes it feel alive)
       ##4. A reliable source of 5V !!! very important.
-      5.some wires and a breadboard.
+      5. Some wires and a breadboard.
 
 
 
 ## Setting up the app/downloading all the neccesary libraries(there is a lot)
 
 
-Download each library, i will list them all below, and just a heads up you will need to first create a virtual enviremont
+Download each library, i will list them all below, and just a heads up you will need to first create a virtual environment
 
 * setting up venv(if it doesnt work try python3 -m venv .venv)
   ```sh
@@ -38,7 +52,7 @@ Download each library, i will list them all below, and just a heads up you will 
   ```sh
   source .venv/bin/activate
   ```
-#Now that you activated the virtual envirment you should see (venv) in your terminal
+#Now that you activated the virtual environment you should see (venv) in your terminal
 Now to installing the libraries 
 
 * Install PySide6
@@ -65,7 +79,7 @@ For conversation use -> Llama 3.2 3B
 
 For creativity -> Gemma 2 (this one is a bit heavier though so keep that in mind)
 
-#There is many other models but if you are going to run the AI on your personal computer where you also do other sutff
+#There are many other models but if you are going to run the AI on your personal computer where you also do other sutff
 i highly recommend not going over 3b parameters.
 
 Next you need to download the model,follow these steps, i am using qwen2.5:3b for the example just switch that if you want a different model
@@ -81,13 +95,13 @@ If everything works now you can just copy the Main.py to a coding ide and when y
 try out the app and if everything is working we can move on
 
 
-#Next step actually making the arm
+## Making the arm
 The arm consists of a square base, a shoulder and head.I included 2 stl files one for the body one for the head you can either print
-those out or easily recreate it from lego/cardboard. Although you shouold really watch your servo weights since a cardboard arm will need lighter servos then a lego one obviously.
+those out or easily recreate it from lego/cardboard. Although you shouold really watch your servo models since a cardboard arm will need lighter servos then a lego one obviously.
 I will have a youtube video (maybe its even out by now) where i show closer look of the arm.
 
 
-#Now to set up the microcontroler
+## Now to set up the microcontroler
 The last step is to set up your microcontroller of choice (i am using a esp32 but it works with all).
 just load the reciever code on to your microcontroller and keep in mind if you are using something else then a esp
 you will have to tweak a few stuff (for example baud rate is 9600 for arduino not 115200)
