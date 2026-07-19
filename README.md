@@ -72,15 +72,16 @@ import os,sys,time,datetime,serial,pyttsx3,ollama,pathlib
 
 Now that you got all the libraries you need to choose a ollama ai model to use for the project.
 
-## Here are a few of my recommendations based on what you need the ai for.
+## Choosing a AI model.
 
 * For a light AI model for coding and talking use -> qwen2.5-coder:3b
 
 * For conversation use -> Llama 3.2 3B
 
-* For creativity -> Gemma 2 (this one is a bit heavier though so keep that in mind)
+* For creativity -> Gemma 2 (this one is a bit heavier though so keep that in mind)
 
-#There are many other models but if you are going to run the AI on your personal computer where you also do other sutff
+
+There are many other models but if you are going to run the AI on your personal computer where you also do other things
 i highly recommend not going over 3b parameters.
 
 Next you need to download the model,follow these steps, i am using qwen2.5:3b for the example just switch that if you want a different model
@@ -92,6 +93,7 @@ ollama pull qwen2.5:3b
 ```
 ollama run qwen2.5:3b
 ```
+
 If everything works now you can just copy the Main.py to a coding ide and when you run it, the pyside6 app should show up,
 try out the app and if everything is working we can move on
 
@@ -102,10 +104,31 @@ those out or easily recreate it from lego/cardboard. Although you shouold really
 I will have a youtube video (maybe its even out by now) where i show closer look of the arm.
 
 
-## Now to set up the microcontroler
+## Now to set up the microcontroller
 The last step is to set up your microcontroller of choice (i am using a esp32 but it works with all).
-just load the reciever code on to your microcontroller and keep in mind if you are using something else then a esp
+Just load the reciever code on to your microcontroller and keep in mind if you are using something else then a esp
 you will have to tweak a few stuff (for example baud rate is 9600 for arduino not 115200)
+
+* Here is how the components should be connected to the esp32
+
+<img width="772" height="506" alt="Screenshot_2026-07-19_12-44-58" src="https://github.com/user-attachments/assets/fda8c9f6-24d1-4c60-a686-bcca1cfa458e" />
+
+
+(keep in mind the servos should be hooked up to the external power supply, in the way that the red cable goes to
+5v and the grounds go to ground plus add one ground wire from the esp to the ground so the curcuit is closed)
+
+* It will look something like this:
+          5V:                  GROUND:
+          SERVO1_REDWIRE       ESP_GROUND
+          SERVO2_REDWIRE       SERVO1_GROUND_WIRE
+          SERVO3_REDWIRE       SERVO2_GROUND_WIRE
+                              SERVO3_GROUND_WIRE
+
+
+
+  
+          
+        
 
 
 
