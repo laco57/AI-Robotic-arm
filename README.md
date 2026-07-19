@@ -117,13 +117,20 @@ you will have to tweak a few stuff (for example baud rate is 9600 for arduino no
 (keep in mind the servos should be hooked up to the external power supply, in the way that the red cable goes to
 5v and the grounds go to ground plus add one ground wire from the esp to the ground so the curcuit is closed)
 
-* It will look something like this:
-          5V:                  GROUND:
-          SERVO1_REDWIRE       ESP_GROUND
-          SERVO2_REDWIRE       SERVO1_GROUND_WIRE
-          SERVO3_REDWIRE       SERVO2_GROUND_WIRE
-                              SERVO3_GROUND_WIRE
 
+And congrats the arm should now be working!!!
+
+Here are some common issues though:
+      * if you have trouble installing libraries make sure you have python3 installed,and try replacing pip with pip3
+      * when activating .venv if you are on a arch based distro you will have to use .venv/bin/activate.fish
+      * triple check the wiring trust me
+      * make sure you have the correct AI model in the code 
+      * If you have trouble recieving data through serial try changing the baudrate
+      * if you are using anythign else then esp32 tweak the code(for example remove the library esp32servo from the code or change the baudrate as i said earlier)
+      * if the arm is wobbling try playing around with the part lenghts/servo models.
+
+Thats it thank you for reading i hope you like the project and if you have any issues feel free to reach out!!
+I am more than happy to help!.
 
 
   
