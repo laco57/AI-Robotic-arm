@@ -120,7 +120,7 @@ you will have to tweak a few stuff (for example baud rate is 9600 for arduino no
 
 And congrats the arm should now be working!!!
 
-Here are some common issues though:
+## Here are some common issues though:
       * if you have trouble installing libraries make sure you have python3 installed,and try replacing pip with pip3
       * when activating .venv if you are on a arch based distro you will have to use .venv/bin/activate.fish
       * triple check the wiring trust me
