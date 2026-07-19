@@ -13,8 +13,29 @@ Now here are the steps to make it:
 ## Setting up the app/downloading all the neccesary libraries(there is a lot)
 
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Download each library, i will list them all below, and just a heads up you will need to first create a virtual enviremont
+
+* setting up venv(if it doesnt work try python3 -n venv .venv)
   ```sh
-  npm install npm@latest -g
+  python -m venv .venv 
   ```
+* then activate it
+  ```sh
+  .venv\Scripts\activate.bat
+  ```
+* If you are on linux use
+  ```sh
+  source .venv/bin/activate
+  ```
+#Now that you activated the virtual envirment you should see (venv) in your terminal
+Now to installing the libraries 
+
+* Install PySide6
+```sh
+pip3 install PySide6
+```
+*Install Dotenv
+```sh
+pip3 install python-dotenv
+```
+
