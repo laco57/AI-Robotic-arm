@@ -30,7 +30,7 @@ Now here are the steps to make it:
       1. 3 servomotors(model depends on what you are making the arm from)
       2. A microcontroller(esp,arduino,raspberry_pico)
       3. A oled display(optional but makes it feel alive)
-      ##4. A reliable source of 5V !!! very important.
+      ## 4. A reliable source of 5V !!! very important.
       5. Some wires and a breadboard.
 
 
