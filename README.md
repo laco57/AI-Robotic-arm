@@ -52,7 +52,7 @@ Download each library, i will list them all below, and just a heads up you will 
   ```sh
   source .venv/bin/activate
   ```
-#Now that you activated the virtual environment you should see (venv) in your terminal
+Now that you activated the virtual environment you should see (venv) in your terminal
 Now to installing the libraries 
 
 * Install PySide6
@@ -127,7 +127,9 @@ Here are some common issues though:
       * make sure you have the correct AI model in the code 
       * If you have trouble recieving data through serial try changing the baudrate
       * if you are using anythign else then esp32 tweak the code(for example remove the library esp32servo from the code or change the baudrate as i said earlier)
+      * also check if you have the correct port very important (you can check what port your using by going to the arduino ide and finding your microcontroller)
       * if the arm is wobbling try playing around with the part lenghts/servo models.
+
 
 Thats it thank you for reading i hope you like the project and if you have any issues feel free to reach out!!
 I am more than happy to help!.
