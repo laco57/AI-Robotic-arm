@@ -59,12 +59,12 @@ Now to installing the libraries
 ```sh
 pip3 install PySide6
 ```
-*Install Dotenv
+* Install Dotenv
 ```sh
 pip3 install python-dotenv
 ```
 
-#Then just install all these in the format "pip3 install library name"
+* Then just install all these in the format "pip3 install library name"
 ```
 import os,sys,time,datetime,serial,pyttsx3,ollama,pathlib
 ```
