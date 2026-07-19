@@ -120,6 +120,7 @@ you will have to tweak a few stuff (for example baud rate is 9600 for arduino no
 
 And congrats the arm should now be working!!!
 
+
 ## Here are some common issues though:
 
       * if you have trouble installing libraries make sure you have python3 installed,and try replacing pip with pip3
@@ -130,6 +131,7 @@ And congrats the arm should now be working!!!
       * if you are using anythign else then esp32 tweak the code(for example remove the library esp32servo from the code or change the baudrate as i said earlier)
       * also check if you have the correct port very important (you can check what port your using by going to the arduino ide and finding your microcontroller)
       * if the arm is wobbling try playing around with the part lenghts/servo models.
+
 
 
 Thats it thank you for reading i hope you like the project and if you have any issues feel free to reach out!!
