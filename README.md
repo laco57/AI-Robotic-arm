@@ -46,11 +46,8 @@ pip3 install PySide6
 ```sh
 pip3 install python-dotenv
 ```
-*Pathlib
-```sh
-pip3 install pathlib
+
+#Then just install all these in the format "pip3 install library name"
 ```
-#Then just install all these in the format "pip3 install <library name>"
-```
-import os,sys,time,datetime,serial,pyttsx3,ollama
+import os,sys,time,datetime,serial,pyttsx3,ollama,pathlib
 ```
