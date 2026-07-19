@@ -10,6 +10,14 @@ its made from easily accesible materials (i made it from lego but it can be easi
 You can talk to the AI through a PySide6 app i made,i personally prefer typing my prompts but you can very easily make it voice controlled.
 Now here are the steps to make it:
 
+
+
+
+
+
+
+
+
 ## Setting up the app/downloading all the neccesary libraries(there is a lot)
 
 
@@ -38,4 +46,11 @@ pip3 install PySide6
 ```sh
 pip3 install python-dotenv
 ```
-
+*Pathlib
+```sh
+pip3 install pathlib
+```
+#Then just install all these in the format "pip3 install <library name>"
+```
+import os,sys,time,datetime,serial,pyttsx3,ollama
+```
