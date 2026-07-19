@@ -70,14 +70,15 @@ import os,sys,time,datetime,serial,pyttsx3,ollama,pathlib
 ```
 
 
-#Now that you got all the libraries you need to choose a ollama ai model to use for the project.
-Here are a few of my recommendations based on what you need the ai for.
+Now that you got all the libraries you need to choose a ollama ai model to use for the project.
 
-For a light AI model for coding and talking use -> qwen2.5-coder:3b
+## Here are a few of my recommendations based on what you need the ai for.
 
-For conversation use -> Llama 3.2 3B
+* For a light AI model for coding and talking use -> qwen2.5-coder:3b
 
-For creativity -> Gemma 2 (this one is a bit heavier though so keep that in mind)
+* For conversation use -> Llama 3.2 3B
+
+* For creativity -> Gemma 2 (this one is a bit heavier though so keep that in mind)
 
 #There are many other models but if you are going to run the AI on your personal computer where you also do other sutff
 i highly recommend not going over 3b parameters.
