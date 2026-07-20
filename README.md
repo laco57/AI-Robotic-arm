@@ -100,9 +100,12 @@ try out the app and if everything is working we can move on
 
 ## Making the arm
 The arm consists of a square base, a shoulder and head.I included 2 stl files one for the body one for the head you can either print
-those out or easily recreate it from lego/cardboard. Although you shouold really watch your servo models since a cardboard arm will need lighter servos then a lego one obviously.
-I will have a youtube video (maybe its even out by now) where i show closer look of the arm.
-
+those out or easily recreate it from lego/cardboard. Although you shouold really watch your servo models since a cardboard arm will need lighter servos then a lego one obviously. 
+Also you can add a magnet to the bottom so it can hold magnetic stuff, customizing the head or really any part of the arm is up to you.
+Here is the link to my youtube video short showcase, if enough people will be interested i will make a full tutorial
+```
+https://www.youtube.com/watch?v=_c7u38jrQPk
+```
 
 ## Now to set up the microcontroller
 The last step is to set up your microcontroller of choice (i am using a esp32 but it works with all).
